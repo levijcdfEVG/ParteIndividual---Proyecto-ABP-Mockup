@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de Libros</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/formAdm.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>ESCUELA VIRGEN DE GUADALUPE</h1>
+        </header>
+        <h1 id="tituloForm">Añadir Reserva</h1>
+        <main>
+            <form id="formularioPrincipal">
+                <label>
+                    DNI: <input type="text" name="dni" placeholder="Introduce tu dni..." required/>
+                </label>
+                <label>
+                    Nombre: <input type="text" name="nombreAlumno" placeholder="Introduce tu nombre..." required/>
+                </label>
+                <label>
+                    Apellido: <input type="text" name="apellidoAlumno" placeholder="Introduce tu apellido..." required/>
+                </label>
+                <label>
+                    Correo: <input type="mail" name="correoAlumno" placeholder="Introduce tu correo..." required/>
+                </label>
+                <br/>
+                <div id="contenedorIzquierda">
+                    <label>
+                        Libro 1: <input type="checkbox" name="libroASeleccionar[]" required/>
+                    </label>
+                    <label>
+                        Libro 2: <input type="checkbox" name="libroASeleccionar[]" required/>
+                    </label>
+                </div>
+                <div id="contenedorDerecha">
+                    <label>Pago</label>
+                    <label>
+                        Si <input type="radio" name="statusPago"  required/>
+                    </label>
+                    <label>
+                        No <input type="radio" name="statusPago" required/>
+                    </label>
+                </div>
+                <br><input type="submit" value="Realizar Reserva" id="botonDeReserva" />
+            </form>
+        </main>
+    </body>
+</html>
