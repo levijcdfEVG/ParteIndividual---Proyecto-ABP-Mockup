@@ -16,6 +16,11 @@ header {
     font-weight: bold;
 }
 
+#botonRegresar{
+    text-decoration: none;
+    color: white;
+}
+
 /* Estilos del formulario */
 form {
     max-width: 600px;

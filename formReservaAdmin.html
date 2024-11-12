@@ -8,6 +8,7 @@
     <body>
         <header>
             <h1>ESCUELA VIRGEN DE GUADALUPE</h1>
+            <a id="botonRegresar" href="index.html">Regresar</a>
         </header>
         <h1 id="tituloForm">Añadir Reserva</h1>
         <main>
@@ -26,21 +27,20 @@
                 </label>
                 <br/>
                 <div id="contenedorIzquierda">
-                    <label>
-                        Libro 1: <input type="checkbox" name="libroASeleccionar[]" required/>
-                    </label>
-                    <label>
-                        Libro 2: <input type="checkbox" name="libroASeleccionar[]" required/>
-                    </label>
+                    <label for="libroASeleccionar">Seleccione un libro:</label>
+                    <select name="libroASeleccionar" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="libro1">Libro 1</option>
+                        <option value="libro2">Libro 2</option>
+                    </select>
                 </div>
                 <div id="contenedorDerecha">
-                    <label>Pago</label>
-                    <label>
-                        Si <input type="radio" name="statusPago"  required/>
-                    </label>
-                    <label>
-                        No <input type="radio" name="statusPago" required/>
-                    </label>
+                    <label for="confirmacionPAgo">Se ha realizado el pago:</label>
+                    <select name="estadoDelPago" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="pagoConfirmado">Si</option>
+                        <option value="pagoNoConfirmado">No</option>
+                    </select>
                 </div>
                 <br><input type="submit" value="Realizar Reserva" id="botonDeReserva" />
             </form>
